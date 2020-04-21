@@ -7,7 +7,11 @@ layout: layouts/default.njk
       <a href="{{post.url}}">
         <h2>{{post.data.pageTitle}}</h2>
       </a>
-      <small>{{post.date}}</small>
+
+      <time datetime="{{post.date.toLocaleString('en-UK')}}">
+        {{ post.date.toLocaleDateString('en-UK', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) | replace(',', '') }}
+      </time>
+      
       <p>{{post.data.description}}</p>
     </article>
   {%- endfor -%}

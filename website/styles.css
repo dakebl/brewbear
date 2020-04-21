@@ -32,7 +32,7 @@ p {
 
 time {
   display: block;
-  margin-bottom: 30px;
+  color: dimgrey;
 }
 
 header h1 {
@@ -57,6 +57,10 @@ article h1 {
 
 article h2 {
   margin: 20px 0 5px;
+}
+
+.post-time {
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 450px) {
