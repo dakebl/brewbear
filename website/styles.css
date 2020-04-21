@@ -1,0 +1,73 @@
+body {
+  font-family: "Inconsolata", monospace;
+  display: grid;
+  /* margin: 20px; */
+  grid-template-columns: 1fr;
+  grid-template-rows: 190px 5fr 40px;
+  max-width: 42rem;
+
+  margin: 0 20px;
+  height: calc(100vh - 40px);
+  background-color: #eae7dc;
+  background-color: #f7f7f7;
+  color: #000;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+a {
+  color: orangered;
+  text-decoration: none;
+}
+
+p {
+  padding: 5px 0;
+}
+
+time {
+  display: block;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-family: "Crimson Text", serif;
+  font-size: 42px;
+  margin-bottom: 0;
+}
+
+header p {
+  font-size: 18px;
+  padding: 0;
+}
+
+article {
+  margin: 0 0 60px;
+}
+
+article h1 {
+  font-size: 32px;
+  margin: 20px 0 5px;
+}
+
+article h2 {
+  margin: 20px 0 5px;
+}
+
+@media screen and (min-width: 450px) {
+  body {
+    margin: 20px 10%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
