@@ -1,0 +1,16 @@
+---
+layout: layouts/default.njk
+---
+
+  {%- for post in collections.post -%}
+    <article>
+      <a href="{{post.url}}">
+        <h2>{{post.data.pageTitle}}</h2>
+      </a>
+      <small>{{post.date}}</small>
+      <p>{{post.data.description}}</p>
+    </article>
+  {%- endfor -%}
+
+
+
