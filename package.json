@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prestart": "rm -r dist",
     "build": "eleventy",
     "start": "eleventy --serve"
   },
