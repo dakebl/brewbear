@@ -5,7 +5,6 @@ description: An initial post to talk about this blog
 date: 2020-04-18
 tags: post
 ---
-# Writing about living simply
 
 Welcome to BrewBear, our new blog on simple living. 
 
