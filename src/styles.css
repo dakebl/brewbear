@@ -1,16 +1,14 @@
 body {
-  font-family: "Inconsolata", monospace;
-  display: grid;
-  /* margin: 20px; */
-  grid-template-columns: 1fr;
-  grid-template-rows: 190px 5fr 40px;
-  max-width: 42rem;
-
-  margin: 0 20px;
-  height: calc(100vh - 40px);
-  background-color: #eae7dc;
   background-color: #f7f7f7;
   color: #000;
+  display: grid;
+  font-family: "Inconsolata", monospace;
+  font-size: 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 190px 5fr 40px;
+  height: calc(100vh - 40px);
+  margin: 0 20px;
+  max-width: 42rem;
 }
 
 h1 {
@@ -23,6 +21,7 @@ h2 {
 
 a {
   color: orangered;
+  font-weight: bolder;
   text-decoration: none;
 }
 
@@ -31,18 +30,18 @@ p {
 }
 
 time {
-  display: block;
   color: dimgrey;
+  display: block;
 }
 
-header h1 {
+header h1, header h2 {
   font-family: "Crimson Text", serif;
   font-size: 42px;
+  margin-top: 28px;
   margin-bottom: 0;
 }
 
 header p {
-  font-size: 18px;
   padding: 0;
 }
 
