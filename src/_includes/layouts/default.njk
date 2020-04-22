@@ -2,15 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="author" content="BrewBear">
+    <meta name="description" content="{{ description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    {% if isPost %}
+    <!-- Open Graph data -->
+    <meta property="og:title" content="{{ pageTitle }}" />
+    <meta property="og:type" content="article" />
+    {# <meta property="og:url" content="{{ page.url }}" /> #}
+    {# <meta property="og:image" content="http://example.com/image.jpg" /> #}
+    <meta property="og:description" content="{{ description }}" />
+    <meta property="og:site_name" content="BrewBear" />
+    {% endif %}
+    
+    <title>BrewBear | {{ pageTitle }}</title>
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Inconsolata&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
   </head>
 
   <body>
     <header>
+
+    {% if isPost %}
+      <h2>BrewBear</h2>
+    {% else %}
       <h1>BrewBear</h1>
+    {% endif %}
+      
       <p>Adventures in living simply.</p>
     </header>
     <main>
